@@ -1,0 +1,53 @@
+:root {
+    --cor-fundo: #FAF8F5;         /* fundo suave e neutro (quase branco) */
+    --cor-principal: #05c5c5;     /* verde forte e elegante – representa o campo */
+    --cor-secundaria: #01628f;    /* azul profundo – representa a cidade */
+    --cor-destaque: #000000;      /* laranja claro – energia, chama atenção */
+    --cor-texto: #000000;         /* grafite escuro – legível em qualquer fundo */
+}
+
+
+body{
+    background-color: var(--cor-fundo);
+    color: var(--cor-texto);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.caixa-principal {
+    background-color: var(--cor-principal);
+    width: 90%;
+    max-width: 600px;
+    text-align: center;
+    padding: 20px;
+}
+
+h1{
+    color: var(--cor-destaque);
+}
+
+button{
+    background-color: var(--cor-secundaria);
+    color: var(--cor-texto);
+    border: none;
+    border-radius: 15px;
+    padding: 15px;
+    transition: background-color 0.3s;
+}
+
+button:hover{
+    background-color: var(--cor-texto);
+    color: var(--cor-principal);
+
+}
+
+
+.imagem-pergunta {
+    width: 100%;
+    max-height: 200px;
+    object-fit: cover;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
